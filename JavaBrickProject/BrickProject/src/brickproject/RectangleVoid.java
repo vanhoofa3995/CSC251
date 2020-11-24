@@ -1,19 +1,25 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package brickproject;
 
 /**
  *
  * @author apulus8050
  */
-public class Wall {
+public class RectangleVoid {
+    
     private double _h;
     private double _w;
     
-    public Wall() {
+    public RectangleVoid() {
         _h = 0;
         _w = 0;
     }
     
-    public Wall(double height, double width) {
+    public RectangleVoid(double height, double width) {
         _h = height;
         _w = width;
     }
