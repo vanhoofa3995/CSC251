@@ -10,15 +10,20 @@ public class Brick {
     private double _area;   //sq. inches
     private double _mortarThickness; //inches
     
+    
+    //(H)3.625" x (L)2.25" x (W)8" Dimensions of standard brick
+    //.375" standard mortar thickness
+    
     //Constructors
     public Brick() {
-        _h = 0;
-        _w = 0;
+        _h = 3.625;
+        _w = 8;
+        _mortarThickness = .375 / 2.0;
     }
     public Brick(double h, double w, double mortarThickness) {
         _h = h;
         _w = w;
-        _mortarThickness = mortarThickness;
+        _mortarThickness = mortarThickness / 2.0;
     }
     
     //set and get heights
@@ -39,10 +44,10 @@ public class Brick {
     
     //set and get mortar thickness
     public void setMortarThickness(double newThickness) {
-        _mortarThickness = newThickness / 2;
+        _mortarThickness = newThickness / 2.0;
     }
     public double getMortarThickness() {
-        return _mortarThickness;
+        return _mortarThickness * 2.0;
     }
     
     public double getArea() {
@@ -51,8 +56,9 @@ public class Brick {
     }
     
     public void getBrickInfo() {
-        System.out.println("\nBrick Info"
+        System.out.println("\n\tCurrent Brick Properties"
                 + "\nHeight: " + this.getHeight() + " inches"
-                + "\nWidth: " + this.getWidth() + " inches");
+                + "\nWidth: " + this.getWidth() + " inches"
+                + "\nMortar Thickness: " + this.getMortarThickness() + " inches\n");
     }
 }
