@@ -180,7 +180,9 @@ public class BrickProject {
         
         //Started refactoring for menu options
         do {
+            System.out.println("---------------------------------");
             System.out.println("\tCSC 251 Brick Project");
+            System.out.println("---------------------------------");
             System.out.print("1. View/Adjust Brick Properties"
                            + "\n2. Build Your Wall"
                            + "\n3. Exit"
@@ -218,7 +220,9 @@ public class BrickProject {
                     break;
                     
                 case "2":
-                    System.out.println("\nEnter Wall Dimensions");
+                    System.out.println("---------------------------------");
+                    System.out.println("\tEnter Wall Dimensions");
+                    System.out.println("---------------------------------");
                     //wall dimensions  
                     wallH = GetWallHeight(kb);
                     wallW = GetWallWidth(kb);

@@ -56,7 +56,9 @@ public class Brick {
     }
     
     public void getBrickInfo() {
-        System.out.println("\n\tCurrent Brick Properties"
+        System.out.println("---------------------------------");
+        System.out.println("\tCurrent Brick Properties");
+        System.out.println("---------------------------------"                
                 + "\nHeight: " + this.getHeight() + " inches"
                 + "\nWidth: " + this.getWidth() + " inches"
                 + "\nMortar Thickness: " + this.getMortarThickness() + " inches\n");
